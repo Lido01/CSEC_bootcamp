@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* 🔥 AMAZING IMAGE STYLE 🔥 */
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.08);
+        }
+
+        form {
+            margin-top: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>Lidetu Tesfaye</h1>
+
+        <!-- Bio -->
+        <p>
+            Hello! My name is Lidetu Tesfaye. I am a student who is learning web development.
+            I enjoy working with computers, learning new technologies, and creating simple websites.
+        </p>
+
+        <!-- Image -->
+        <img src="/CSEC_dev_bootcamp/assets/lidetu.jpg" alt="Lidetu Profile Picture">
+
+        <!-- Contact Form -->
+        <form onsubmit="showMessage()">
+            <label>Name:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Message:</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for contacting me!");
+        }
+    </script>
+
+</body>
+</html>
