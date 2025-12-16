@@ -1,0 +1,124 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* 1️⃣ Header */
+.header {
+  background-image: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* 2️⃣ Profile Section (Flexbox) */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  background-color: white;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile p {
+  max-width: 400px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* 3️⃣ Skills Section (Grid) */
+.skills {
+  padding: 40px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #4facfe;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* 4️⃣ Contact Section */
+.contact {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* 5️⃣ Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile p {
+    text-align: center;
+  }
+}
