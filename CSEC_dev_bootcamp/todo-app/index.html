@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Todo List App</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="Enter a todo">
+            <button id="addTodoBtn" disabled>Add Todo</button>
+        </div>
+
+        <!-- Todo List -->
+        <ul id="todoList"></ul>
+
+        <!-- Empty Message -->
+        <p id="emptyMessage">No todos available.</p>
+
+        <!-- Stats -->
+        <div class="stats">
+            <p>Total Todos: <span id="totalCount">0</span></p>
+            <p>Completed Todos: <span id="completedCount">0</span></p>
+        </div>
+
+        <!-- Clear All -->
+        <button id="clearAllBtn" class="clear-btn">Clear All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
